@@ -1,6 +1,9 @@
+// This class implements a thread-safe binary search tree (BST) for storing key-value pairs in sorted order.
+// The keys and values are represented as byte arrays. The BST supports insertion (put method) and retrieval (get method) operations.
 public class ThreadSafeBinarySearchTree {
 
     // Node class representing each node in the BST
+    // Each node contains a key, a value, and references to left and right child nodes.
     private static class Node {
         byte[] key;
         byte[] value;
