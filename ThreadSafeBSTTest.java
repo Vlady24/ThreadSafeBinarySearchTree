@@ -61,8 +61,6 @@ public class ThreadSafeBSTTest {
             doneSignal.await();
             System.out.println("All threads completed successfully");
             System.out.println("Final active threads count: " + activeThreads.get());
-            System.out.println("BST1 Root: " + bst1.toString());
-            System.out.println("BST2 Root: " + bst2.toString());
 
             if (activeThreads.get() != 0) {
                 System.err.println("Warning: Some threads did not complete properly");

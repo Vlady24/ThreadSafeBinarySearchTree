@@ -1,6 +1,5 @@
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 import java.util.concurrent.locks.ReadWriteLock;
-import java.util.Arrays;
 
 // This class implements a thread-safe binary search tree (BST) for storing key-value pairs in sorted order.
 // The keys and values are represented as byte arrays. The BST supports insertion (put method) and retrieval (get method) operations.
