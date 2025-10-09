@@ -1,6 +1,9 @@
+import java.util.Arrays;
+
 // This class implements a thread-safe binary search tree (BST) for storing key-value pairs in sorted order.
 // The keys and values are represented as byte arrays. The BST supports insertion (put method) and retrieval (get method) operations.
-public class ThreadSafeBinarySearchTree {
+// Thread-safe approach: the entire put and get methods are synchronized to ensure that only one thread can access these methods at a time.
+public class ThreadSafeBinarySearchTreeSolution_1 {
 
     // Node class representing each node in the BST
     // Each node contains a key, a value, and references to left and right child nodes.
@@ -16,7 +19,7 @@ public class ThreadSafeBinarySearchTree {
         }
     }
 
-    private Node root; // Root of the BST
+    public Node root; // Root of the BST
 
     // Method to compare two byte arrays lexicographically
     private int compare(byte[] a, byte[] b) {
